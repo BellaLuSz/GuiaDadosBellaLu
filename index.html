@@ -19,23 +19,42 @@
 
     .banner {
       width: 100%;
-      height: 500px; /* aumentada */
+      height: 500px;
       background-image: url('banner.jpg');
       background-size: cover;
       background-position: center;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .banner-texto {
+      color: white;
+      text-align: center;
+      background-color: rgba(0, 0, 0, 0.4);
+      padding: 20px 40px;
+      border-radius: 12px;
+      max-width: 90%;
+    }
+
+    .banner-texto h1 {
+      font-size: 40px;
+      margin-bottom: 10px;
+      color: #fff;
+    }
+
+    .banner-texto .tagline {
+      font-size: 20px;
+      font-style: italic;
+      color: #eee;
+      margin: 0;
     }
 
     .container {
       max-width: 800px;
       margin: 0 auto;
       padding: 40px 20px;
-    }
-
-    h1 {
-      color: #6a0dad;
-      font-size: 42px;
-      margin-bottom: 10px;
-      text-align: center;
     }
 
     h2 {
@@ -84,14 +103,6 @@
       padding-bottom: 20px;
     }
 
-    .tagline {
-      text-align: center;
-      font-style: italic;
-      color: #444;
-      font-size: 20px;
-      margin-top: 10px;
-    }
-
     .contact-icons {
       display: flex;
       gap: 10px;
@@ -106,12 +117,15 @@
 </head>
 <body>
 
-  <div class="banner"></div>
+  <!-- Banner com título sobreposto -->
+  <div class="banner">
+    <div class="banner-texto">
+      <h1>Guia para migrar para Análise de Dados</h1>
+      <p class="tagline">como saí do call center e me tornei uma pessoa dos dados</p>
+    </div>
+  </div>
 
   <div class="container">
-    <h1>Guia para migrar para Análise de Dados</h1>
-    <p class="tagline">como saí do call center e me tornei uma pessoa dos dados</p>
-
     <section>
       <h2>💡 Minha história</h2>
       <p>Me formei em Marketing num momento em que o mercado estava difícil. Entrei como assistente de call center e fui desenvolvendo habilidades importantes como escuta ativa e organização. Descobri a Análise de Dados e comecei a estudar nos meus tempos livres. Hoje trabalho na área e quero te ajudar a chegar lá também.</p>
